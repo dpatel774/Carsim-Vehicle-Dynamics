@@ -4,7 +4,7 @@ Independent vehicle dynamics project modeling how a car's tires generate grip, l
 
 **Vehicle:** D-Class Sedan (CarSim 2020), held constant across all tests for methodological consistency
 **Tools:** CarSim (simulation) · MATLAB (analysis and plotting)
-**Scope:** 4 standardized test maneuvers → 10 analysis deliverables
+**Scope:** 3 standardized test maneuvers → 10 analysis deliverables
 
 ---
 
@@ -24,14 +24,13 @@ A two-point calibration estimated K ≈ 16.5 deg/g; a full linear regression acr
 
 ---
 
-## The Four Tests
+## The Three Tests
 
 | # | Test | What it isolates |
 |---|---|---|
-| 1 | Constant-radius cornering | Steering angle needed to hold a 100m radius as speed increases → handling diagram |
-| 2 | Skidpad / grip-limit sweep | Where the car can no longer hold the target radius → cornering performance ceiling |
-| 3 | Step-steer transient response | How cleanly the car settles after a sudden steering input, across speeds → stability margin |
-| 4 | Brake-in-turn | How braking eats into cornering grip → slip ratio, friction ellipse, per-tire force split |
+| 1 | Constant-radius cornering & grip-limit sweep | Steering angle needed to hold a 100m radius across a full speed sweep, extending through the point where grip runs out → handling diagram + cornering performance ceiling |
+| 2 | Step-steer transient response | How cleanly the car settles after a sudden steering input, across speeds → stability margin |
+| 3 | Brake-in-turn | How braking eats into cornering grip → slip ratio, friction ellipse, per-tire force split |
 
 ---
 
@@ -45,7 +44,7 @@ A two-point calibration estimated K ≈ 16.5 deg/g; a full linear regression acr
 6. Understeer gradient
 7. Step-steer time response
 8. Stability margin
-9. Cornering performance summary (extended: front/rear axle grip-ceiling investigation)
+9. Cornering performance summary (extended from the grip-limit sweep: front/rear axle grip-ceiling investigation)
 10. Combined summary figure
 
 Full methodology, data-cleaning decisions, and detailed findings are in [`docs/methodology.md`](docs/methodology.md).
