@@ -13,8 +13,15 @@ Independent vehicle dynamics project modeling how a car's tires generate grip, l
 **1. The car's cornering limit is rear-limited, not front-limited.**
 A dedicated steering-angle sweep at fixed speed showed the front tires' lateral force peaking and saturating (~2150 N near 4° slip angle) — a textbook grip ceiling. The rear tires, however, showed no saturation at all across the same sweep, still climbing in force with no sign of a peak. Vehicle-level lateral acceleration kept rising through 0.80g as a result. The front axle hits its limit first; the rear axle is what's actually still holding the car up.
 
+<p float="left">
+  <img src="figures/deliverable9a_front_tire_ceiling.png" width="49%" />
+  <img src="figures/deliverable9b_rear_tire_still_climbing.png" width="49%" />
+</p>
+
 **2. Braking grip is almost entirely a front-axle event.**
 Under combined braking + cornering, the front tires reached ~2800 N of longitudinal force versus ~250 N at the rear — consistent with front-biased brake proportioning and forward weight transfer concentrating nearly all the braking work on the front axle.
+
+![Friction ellipse showing front tires tracing the grip boundary while rear tires stay clustered near the origin](figures/deliverable4_friction_ellipse.png)
 
 **3. Three transient grip-loss events, explained.**
 Sharp dips in front-right slip ratio and force appeared at three points during hard braking-in-turn. Cross-referencing against brake pressure (smooth, no glitch) and normal load (matching oscillations) ruled out ABS activity or input noise, pointing instead to the front-right tire transiently exceeding its combined friction limit under peak demand.
