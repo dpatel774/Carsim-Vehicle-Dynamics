@@ -54,7 +54,7 @@ A gain sweep on CarSim's reference yaw-control differential (0, 0.31, 0.70, 0.72
 | 1 | Constant-radius cornering & grip-limit sweep | Steering angle needed to hold a 100m radius across a full speed sweep, extending through the point where grip runs out |
 | 2 | Step-steer transient response | How cleanly the car settles after a sudden steering input, across speeds |
 | 3 | Brake-in-turn | How braking eats into cornering grip |
-| 4 | Yaw control co-simulation | Whether active differential torque-vectoring, tuned via gain sweep, can stabilize the car through a severe low-mu double lane change |
+| 4 | Yaw control Simulink co-simulation | Whether active differential torque-vectoring, tuned via gain sweep, can stabilize the car through a severe low-mu double lane change |
 
 Full methodology, findings, and setup for each test:
 
